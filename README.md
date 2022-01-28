@@ -1,0 +1,2 @@
+# selfbot-v5.5
+REMOVED EMBED AND ADDED TEXT 
