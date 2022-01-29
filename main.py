@@ -134,23 +134,21 @@ async def gcspam(ctx, lol, idk):
       await ctx.send("REAPER | GROUP CREATED")
     except:
       print("REAPER | UNABLE TO CREATE GROUP CHAT")
+
 @client.command(pass_context=True)
 async def hack(ctx):
-        embed = discord.Embed(color=000000)
-        embed.set_author(name="REAPER | HACK CMDS")
-        embed.set_footer(text="Created by kraken")
-        embed.add_field(name=">doxip", value="```Displays info on an IP  Parameters- >ip <target>  Ex- >ip 162.159.128.233```")
-        embed.add_field(name=">dosip", value="```Performs simple Denial of Service attack on an IP  Parameters- >dosip <target>  Ex- >dosip 162.159.128.233```") 
-        embed.add_field(name=">gmailbomber", value="```Attempts Mass-Messages to the Target Gmail-ID, works on console. proxies are recommended. Parameters- >gmailbomber Ex- >gmailbomber```")
-        embed.add_field(name=">doxuser", value="```Displays info on a user | Only works in a server Parameters- >doxuser <@target>  Ex- >doxuser @user```")
-        embed.add_field(name=">doxtoken", value="```Displays info on a Discord Account  Parameters- >tdox <target-token>  Ex- >tdox mfa.W3Di4FprRZ_AXH_Y5-A9ReoshSu9Dzn_fTXrvBhwc6p3LvkYLJM4jbr338YUMZ7ECnj2zbxnKm-I2ReFh2Zp```")
-        embed.add_field(name=">doxserver", value="```Displays info on a Discord Server Parameters- >doxserver Ex- >doxserver```")
-        embed.add_field(name=">pingweb", value="```Pings the website to check whether its operational or not. Parameters- >pingweb <website url> Ex- >pingweb https://discord.com/```")
-        embed.add_field(name=">getroles", value="```Sends all roles of a server which you dont have the perm to view | Note - Use a spam channel. Parameters- >getroles Ex- >getroles```")
-        embed.add_field(name=">killwebhook", value="```Deletes a webhook Parameters- >delwebhook <webhook> Ex- >delwebhook https://discordapp.com/api/webhooks/752659248508305488/JnMq-sBIN3IMgDpzgT-KnpFDLEBdQs8AO9sD-_3STGk_ijmyqeKrop3kYSV6lb4ry8S```")
-        embed.add_field(name=">spamhook", value="```Initiates a spam on the given webhook Parameters- >spamhook <webhook_url> <message> Ex- >spamhook https://discord.com/api/webhooks/851376570642989093/Wq_TQM6h5PTusC8nJox1prsC3Ou7gt6MpfeZSyEJyhyi5B3E-1OBt1vf3WqfUYgmwIYb @everyone REAPER op```")
-        await ctx.reply(embed=embed, mention_author=True)
-  
+    await ctx.reply (""" **REAPER** | HACK CMDS      
+      ᴅᴏxɪᴘ ᴠᴀʟᴜᴇ `Displays info on an IP  Parameters- >ip <target>  Ex- >ip 162.159.128.233`
+      ᴅᴏsɪᴘ `(Performs simple Denial of Service attack on an IP  Parameters- >dosip <target>  Ex- >dosip 162.159.128.233`
+      ɢᴀᴍɪʟʙᴏᴍʙᴇʀ `Attempts Mass-Messages to the Target Gmail-ID, works on console. proxies are recommended. Parameters- >gmailbomber Ex- >gmailbomber`
+      ᴅᴏxᴜsᴇʀ `Displays info on a user | Only works in a server Parameters- >doxuser <@target>  Ex- >doxuser @user`
+      ᴅᴏxᴛᴏᴋᴇɴ `Displays info on a Discord Account  Parameters- >tdox <target-token>  Ex- >tdox mfa.W3Di4FprRZ_AXH_Y5-A9ReoshSu9Dzn_fTXrvBhwc6p3LvkYLJM4jbr338YUMZ7ECnj2zbxnKm-I2ReFh2Zp`
+      ᴅᴏxsᴇʀᴠᴇʀ `(Displays info on a Discord Server Parameters- >doxserver Ex- >doxserver`
+      ᴘɪɴɢᴡᴇʙ `Pings the website to check whether its operational or not. Parameters- >pingweb <website url> Ex- >pingweb https://discord.com/`
+      ɢᴇᴛʀᴏʟᴇs `Sends all roles of a server which you dont have the perm to view | Note - Use a spam channel. Parameters- >getroles Ex- >getroles`
+      ᴋɪʟʟᴡᴇʙʜᴏᴏᴋ `Deletes a webhook Parameters- >delwebhook <webhook> Ex- >delwebhook https://discordapp.com/api/webhooks/752659248508305488/JnMq-sBIN3IMgDpzgT-KnpFDLEBdQs8AO9sD-_3STGk_ijmyqeKrop3kYSV6lb4ry8`
+      sᴘᴀᴍʜᴏᴏᴋ `Initiates a spam on the given webhook Parameters- >spamhook <webhook_url> <message> Ex- >spamhook https://discord.com/api/webhooks/851376570642989093/Wq_TQM6h5PTusC8nJox1prsC3Ou7gt6MpfeZSyEJyhyi5B3E-1OBt1vf3WqfUYgmwIYb @everyone REAPER op`""")
+
 @client.command(pass_context=True)
 async def nuke(ctx):
     await ctx.reply("""REAPER | NUKE CMDS
@@ -215,16 +213,12 @@ async def misc(ctx):
 
 @client.command(pass_context=True)
 async def status(ctx):
-        embed = discord.Embed(color=000000)
-        embed.set_author(name="REAPER | Additional Status CMDS")
-        embed.set_footer(text="Created by kraken")
-        embed.add_field(name=">play", value="```Changes the status to Playing Parameters- >play <status>  Ex- >play PUBG EVEN AFTER BAN```")
-        embed.add_field(name=">watch", value="```Changes the status to Watching Parameters- >watch <status>  Ex- >watch NetfliX```")
-        embed.add_field(name=">listen", value="```Changes the status to Listening Parameters->listen <status>  Ex- >listen Fake Spotify OP```")
-        embed.add_field(name=">stream", value="```Changes the status to streaming Parameters- >stream <status> Ex- >stream 1000 Million Subscribers special live stream```")
-        embed.add_field(name=">stopstatus", value="```Stops the current status Parameters- >stopstatus Ex- >stopstatus```")
-        embed.add_field(name=">RPC", value="```Connect to Rich Presence Client Parameters- >rpc <application-id> <status> <image-name> <text> Example- >rpc 822466294032367636 'KRAKEN RPC' idk REAPER```")
-        await ctx.reply(embed=embed, mention_author=True)
+        await ctx.reply("""**REAPER** | Additional Status CMDS  
+         play `Changes the status to Playing Parameters- >play <status>  Ex- >play PUBG EVEN AFTER BAN`
+         watch `Changes the status to Watching Parameters- >watch <status>  Ex- >watch NetfliX`
+         listen `Changes the status to Listening Parameters->listen <status>  Ex- >listen Fake Spotify OP`
+         stream `Changes the status to streaming Parameters- >stream <status> Ex- >stream 1000 Million Subscribers special live stream`
+         stopstatus `Stops the current status Parameters- >stopstatus Ex- >stopstatus`""" )
 
 
 @client.command()
