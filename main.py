@@ -809,21 +809,18 @@ async def image(ctx, link):
   embd.set_image(url=link)
   await ctx.channel.send(linky, embed=embd)
 
-
 @client.command()
-async def scrape(ctx):
-  await ctx.message.delete()
-  mem = ctx.guild.members
-  for member in mem:
-      try:
-        print("krliya scrape")
-        mfil = open("KRAKEN/members.txt","a")
-
-        mfil.write(str(member.id) + "\n")
-        mfil.close()
-
-      except Exception as e:
-        print("error",e)
+async def scrape(ctx, guild):
+    await ctx.message.delete()
+    members_ = 0
+    await client.wait_until_ready()
+    guildOBJ = client.get_guild(int(guild))
+    members = await guildOBJ.chunk()
+    f = open("KRAKEN/members.txt", "a+")
+    for member in members:
+        f.write(f"{member.id}\n")
+        members_ += 1
+    print(f"Scraped {members_} Members!")
 
 
 @client.command()
