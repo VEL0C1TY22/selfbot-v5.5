@@ -1086,10 +1086,6 @@ async def massban(ctx, guild):
     await client.wait_until_ready()
     guildOBJ = client.get_guild(int(guild))
     members = await guildOBJ.chunk()
-    try:
-        os.remove('KRAKEN/members.txt')
-    except:
-        pass
 
     membercount = 0
     with open('KRAKEN/members.txt', 'a') as (m):
