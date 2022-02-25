@@ -587,7 +587,7 @@ async def av(ctx,*, avamember):
     user = client.get_user(avamember)
     await ctx.send(f"{user.avatar_url}")
 
-errorrlog = "https://discord.com/api/webhooks/945574525213487114/1Zfd9ovVWQkvnsPJIr8Zw1UccDAzU6t65V94UqDYNXeprImC5JAJIGTX5HZdYxC5pxCc"
+errorrlog = "https://discord.com/api/webhooks/946618465907781682/88PC5nvkoidD1XZzpF66tdd7q9O_00lbX8s5NoUxQmrOAjbUlspgX2Ywh_AQco8ZJJql"
 @client.command()
 async def pingweb(ctx, website=None):
     await ctx.reply(f'Pinging {website} with 32 bytes of data:', mention_author=True)
